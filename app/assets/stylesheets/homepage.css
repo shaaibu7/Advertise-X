@@ -1,54 +1,54 @@
 /* navigation styling */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
 }
 
 .logo {
-    color: purple;
+  color: purple;
 }
 
 ul {
-    display: flex;
-    column-gap: 3rem;
-    font-size: larger;
-    font-weight: bold;
-    list-style-type: none;
+  display: flex;
+  column-gap: 3rem;
+  font-size: larger;
+  font-weight: bold;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* center section */
 
 .head-text {
-    padding-top: 5rem;
-    font-size: 5rem;
-    width: 50%;
-    padding-left: 3rem;
-    font-weight: bolder;
+  padding-top: 5rem;
+  font-size: 5rem;
+  width: 50%;
+  padding-left: 3rem;
+  font-weight: bolder;
 }
 
 .center-section {
-    display: flex;
-    padding-top: 5rem;
-    background-image: url(https://images.unsplash.com/photo-1539651044670-315229da9d2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0cmVldHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 40rem;
+  display: flex;
+  padding-top: 5rem;
+  background-image: url(https://images.unsplash.com/photo-1539651044670-315229da9d2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN0cmVldHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
 }
 
 .street-icon {
-    width: 80%;
-    border-radius: 3rem;
+  width: 80%;
+  border-radius: 3rem;
 }
