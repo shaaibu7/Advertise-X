@@ -1,0 +1,25 @@
+/* styling for navigation */
+
+.logo {
+    color: purple;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
