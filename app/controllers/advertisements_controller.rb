@@ -1,5 +1,5 @@
 class AdvertisementsController < ApplicationController
-  before_action :set_advertisement, only: %i[ show edit update destroy ]
+  before_action :set_advertisement, only: %i[show edit update destroy]
 
   # GET /advertisements or /advertisements.json
   def index
@@ -7,8 +7,7 @@ class AdvertisementsController < ApplicationController
   end
 
   # GET /advertisements/1 or /advertisements/1.json
-  def show
-  end
+  def show; end
 
   # GET /advertisements/new
   def new
@@ -16,8 +15,7 @@ class AdvertisementsController < ApplicationController
   end
 
   # GET /advertisements/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /advertisements or /advertisements.json
   def create
@@ -25,7 +23,7 @@ class AdvertisementsController < ApplicationController
 
     respond_to do |format|
       if @advertisement.save
-        format.html { redirect_to advertisement_url(@advertisement), notice: "Advertisement was successfully created." }
+        format.html { redirect_to advertisement_url(@advertisement), notice: 'Advertisement was successfully created.' }
         format.json { render :show, status: :created, location: @advertisement }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ class AdvertisementsController < ApplicationController
   def update
     respond_to do |format|
       if @advertisement.update(advertisement_params)
-        format.html { redirect_to advertisement_url(@advertisement), notice: "Advertisement was successfully updated." }
+        format.html { redirect_to advertisement_url(@advertisement), notice: 'Advertisement was successfully updated.' }
         format.json { render :show, status: :ok, location: @advertisement }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +50,20 @@ class AdvertisementsController < ApplicationController
     @advertisement.destroy
 
     respond_to do |format|
-      format.html { redirect_to advertisements_url, notice: "Advertisement was successfully destroyed." }
+      format.html { redirect_to advertisements_url, notice: 'Advertisement was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_advertisement
-      @advertisement = Advertisement.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def advertisement_params
-      params.require(:advertisement).permit(:name, :duration, :package)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_advertisement
+    @advertisement = Advertisement.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def advertisement_params
+    params.require(:advertisement).permit(:name, :duration, :package)
+  end
 end
