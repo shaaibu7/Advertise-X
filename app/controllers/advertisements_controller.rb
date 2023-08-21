@@ -3,7 +3,7 @@ class AdvertisementsController < ApplicationController
 
   # GET /advertisements or /advertisements.json
   def index
-    @advertisements = Advertisement.find_each 
+    @advertisements = Advertisement.find_each
   end
 
   # GET /advertisements/1 or /advertisements/1.json
