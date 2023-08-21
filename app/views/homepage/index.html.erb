@@ -20,6 +20,7 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">About</a></li>
             <li><%= link_to 'log in', new_user_session_path %></li>
+            <li><%= link_to 'Create Ads', new_advertisement_path %></li>
         </ul>
     </nav>
 
@@ -28,5 +29,12 @@
             <p class="head-text">13th Ads Worldwide</p>
         </div>
     <section>
+
+    <div>
+        <% if user_signed_in? %>
+            <p>Welcome<%= current_user.name %></p>
+            <p>Hurray</p>
+        <% end %>
+    </div>
 </body>
 </html>

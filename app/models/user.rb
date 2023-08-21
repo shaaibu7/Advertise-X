@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :advertisements
+  validates :name, :email, :encrypted_password, presence: true
 end

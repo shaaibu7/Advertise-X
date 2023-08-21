@@ -10,9 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_811_210_319) do
+ActiveRecord::Schema[7.0].define(version: 20_230_816_190_647) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
+
+  create_table 'advertisements', force: :cascade do |t|
+    t.string 'name'
+    t.string 'duration'
+    t.string 'package'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
 
   create_table 'users', force: :cascade do |t|
     t.string 'name'
